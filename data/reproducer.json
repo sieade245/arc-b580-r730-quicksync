@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "case": "ARC-R730-001",
+  "pci": {
+    "bios_version": "2.18.1",
+    "system_model": "Dell PowerEdge R730",
+    "board_model_revision": "072T6D A04",
+    "gpu": "Intel Arc B580",
+    "gpu_vendor_device": "8086:E20B",
+    "gpu_subsystem_vendor_device": "1849:6021",
+    "root_to_endpoint_pci_ids": ["8086:6F04", "8086:E2FF", "8086:E2F0", "8086:E20B"],
+    "observed_link": "PCIe Gen3 x8",
+    "physical_vram_gib": 12,
+    "tested_bar_index": 2,
+    "firmware_assigned_bar_mib": 256,
+    "advertised_bar_mib": [256, 512, 1024, 2048, 4096, 8192, 16384]
+  },
+  "synthetic_fixture": {
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "nv12",
+    "frames": 96,
+    "nominal_fps": "24/1",
+    "bytes": 298598400,
+    "sha256": "847644d1e04f676ca1718c49d89cf486583579cd290639ba33a44cceeecdb316",
+    "generator_sha256": "b95780b806ab2fd4a955b7d336aea1feafd6849dfa75140daa023043d3213f98"
+  },
+  "resident_hevc": {
+    "profile": "Main",
+    "input_memory": "video",
+    "timed_pool_surfaces": 96,
+    "timed_input_uploads": 0,
+    "target_usage": 4,
+    "low_power": true,
+    "async_depth": 3,
+    "gop_size": 248,
+    "gop_reference_distance": 8,
+    "reference_frames": 4,
+    "icq_quality": 23,
+    "cqp_i_p_b": [23, 23, 23]
+  },
+  "windows_8993_reference": {
+    "server_build": "20348.5622",
+    "validation_os_build": "26100.9818",
+    "display_driver_version": "32.0.101.8993",
+    "kernel_driver_sha256": "bbc0d411095f87be080a607f241d631dda8e5e9378edb97cc38d0115d74b718e",
+    "media_dll_sha256": "af7ff37d3be531a901675546053181e58a8636433edcc0a808f64f36b0e604e6",
+    "dispatcher_version": "2.17.0.0",
+    "dispatcher_sha256": "2efefa5115b8a52591da2aba6e6ee78ae1690b8d13bfaf532f19586428279bcc",
+    "server_client_sha256": "e0900c01c39d9d6c079451eb0d4a5ba376513dfbfded03c9332672514387121a",
+    "validation_os_client_change": "Three drive-letter bytes changed for the RAM volume",
+    "validation_os_output_ram_gib": 32
+  }
+}
